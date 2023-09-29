@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonlinear Eq/SoEq</title>
+    <link rel="stylesheet" href="/static/styles/main.css">
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <form>
+                <div class="equations menu__item">
+                    <div class="head"><h3>Уравнения</h3></div>
+                    <div><div><input type="radio" name="eq" value="1"></div> <div>x^3-2x</div></div>
+                    <div><div><input type="radio" name="eq" value="2"></div> <div>sin(3x)</div></div>
+                    <div><div><input type="radio" name="eq" value="3"></div> <div>x^3-x+4</div></div>
+                </div>
+                <div class="methods menu__item">
+                    <div class="head"><h3>Методы</h3></div>
+                    <div><div><input type="radio" name="mth" value="1"></div><div>Метод прямоугольников (пр)</div></div>
+                    <div><div><input type="radio" name="mth" value="2"></div><div>Метод прямоугольников (ср)</div></div>
+                    <div><div><input type="radio" name="mth" value="3"></div><div>Метод прямоугольников (лв)</div></div>
+                    <div><div><input type="radio" name="mth" value="4"></div><div>Метод трапеций</div></div>
+                    <div><div><input type="radio" name="mth" value="5"></div><div>Метод симпсона</div></div>
+                </div>
+                <div class="txt menu__item">
+                    <div>Левый край: <input type="text" id="left"></div>
+                    <div>Правый край: <input type="text" id="right"></div>
+                    <div>Точность: <input type="text" id="eps"></div>
+                </div>
+                <div class="buttons menu__item">
+                    <input type="submit" id="submit_eq" value="Отправить">
+                    <button id="clear">Очистить поля</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="/static/scripts/config.js"></script>
+    <script src="/static/scripts/messaging.js"></script>
+    <script src="/static/scripts/dom.js"></script>
+    <script src="/static/scripts/apiFoundation.js"></script>
+    <script src="/static/scripts/validation.js"></script>
+    <script src="/static/scripts/main.js"></script>
+</body>
+</html>
